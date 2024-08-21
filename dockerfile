@@ -3,7 +3,7 @@
 
 FROM golang:alpine as builder
 
-COPY * ./
+COPY domain-sock.go/* ./
 # RUN pwd # >> /go
 RUN go build -ldflags="-s -w" -trimpath .
 
