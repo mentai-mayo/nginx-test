@@ -1,0 +1,24 @@
+{
+  // typescript
+  "compilerOptions": {
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true
+  },
+
+  // linter
+  "lint": {
+    "rules": {
+      "tags": [ "recommended" ],
+      "exclude": [
+        "no-namespace" // namespaceを使うと怒られるやつ
+      ]
+    }
+  },
+
+  // lockfile
+  "lock": false
+}
